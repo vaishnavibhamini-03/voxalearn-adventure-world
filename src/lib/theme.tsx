@@ -26,14 +26,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       stored ?? (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
-    document.documentElement.dataset.theme = initial;
+    document.documentElement.dataset['theme'] = initial;
   }, []);
 
   const toggleTheme = useCallback(() => {
     setTheme((prev) => {
       const next: Theme = prev === "dark" ? "light" : "dark";
       document.documentElement.classList.toggle("dark", next === "dark");
-      document.documentElement.dataset.theme = next;
+      document.documentElement.dataset['theme'] = next;
       try {
         localStorage.setItem(STORAGE_KEY, next);
       } catch {
