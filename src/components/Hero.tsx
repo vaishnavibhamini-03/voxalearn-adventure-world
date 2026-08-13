@@ -16,7 +16,7 @@ export function Hero() {
           <p className="mt-5 font-pixel text-[10px] leading-relaxed text-accent sm:text-sm">
             Learn Smarter. Speak Freely. Grow Faster.
           </p>
-          <p className="mx-auto mt-5 max-w-xl rounded-md bg-background/45 p-3 text-sm leading-relaxed text-foreground sm:text-base">
+          <p className="mx-auto mt-5 max-w-xl rounded-md p-3 text-sm leading-relaxed text-hero-fg sm:text-base">
             Turn learning into an interactive adventure with engaging challenges, immersive game worlds,
             and intelligent guidance.
           </p>

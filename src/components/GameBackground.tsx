@@ -41,8 +41,8 @@ export function GameBackground({
       </picture>
 
       {/* readability veil + theme tint */}
-      <div className="absolute inset-0 bg-background/45 dark:bg-background/40" />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-transparent to-background" />
+      <div className="hero-scrim absolute inset-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
       {STARS.map((star, i) => (
         <span

@@ -43,6 +43,7 @@
   --color-gold-foreground: var(--gold-foreground);
   --color-magic: var(--magic);
   --color-magic-foreground: var(--magic-foreground);
+  --color-hero-fg: var(--hero-fg);
   --font-pixel: "Press Start 2P", ui-monospace, monospace;
   --font-display: "Silkscreen", "Press Start 2P", ui-monospace, monospace;
   --font-sans: "Rubik", ui-sans-serif, system-ui, sans-serif;
@@ -84,6 +85,8 @@
   --pixel-shadow: oklch(0.35 0.09 278 / 0.55);
   --glow: oklch(0.66 0.14 210 / 0.5);
   --veil: oklch(0.98 0.02 265 / 0.72);
+  --hero-scrim: oklch(0.2 0.07 278 / 0.42);
+  --hero-fg: oklch(0.98 0.012 250);
 }
 
 .dark {
@@ -118,6 +121,8 @@
   --pixel-shadow: oklch(0.1 0.05 275 / 0.85);
   --glow: oklch(0.78 0.15 200 / 0.45);
   --veil: oklch(0.14 0.05 275 / 0.62);
+  --hero-scrim: oklch(0.13 0.05 275 / 0.5);
+  --hero-fg: oklch(0.98 0.012 250);
 }
 
 @layer base {
@@ -154,6 +159,10 @@
 @utility font-pixel {
   font-family: var(--font-pixel);
   letter-spacing: 0.02em;
+}
+
+@utility hero-scrim {
+  background-color: var(--hero-scrim);
 }
 
 @utility text-veil {
