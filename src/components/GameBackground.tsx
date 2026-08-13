@@ -66,10 +66,10 @@ export function PageBackground({ className }: { className?: string }) {
           alt=""
           loading="lazy"
           decoding="async"
-          className="size-full object-cover object-top opacity-70"
+          className="size-full object-cover object-top"
         />
       </picture>
-      <div className="absolute inset-0 bg-background/75 dark:bg-background/80" />
+      <div className="absolute inset-0 bg-background/72 dark:bg-background/78" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background" />
     </div>
   );
